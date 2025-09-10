@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Application Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #333;
+        }
+        .loan-links {
+            margin-top: 30px;
+        }
+        .loan-links a {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 30px;
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 8px;
+            font-size: 18px;
+        }
+        .loan-links a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to the Loan Application Portal</h1>
+    <p>Please select a loan type below:</p>
+
+
+    <div class="loan-links">
+    <a href="{{ url_for('loan_form') }}?loan_type=Education">Education Loan Form</a>
+    <a href="{{ url_for('loan_form') }}?loan_type=Personal">Personal Loan Form</a>
+    <a href="{{ url_for('loan_form') }}?loan_type=Home">Home Loan Form</a>
+    <a href="{{ url_for('loan_form') }}?loan_type=Business">Business Loan Form</a>
+    <a href="{{ url_for('loan_form') }}?loan_type=Consumer Durable">Consumer Durable Loan Form</a>
+    <a href="{{ url_for('loan_form') }}?loan_type=Gold">Gold Loan Form</a>
+    <a href="{{ url_for('loan_form') }}?loan_type=Credit Card">Credit Card Loan Form</a>
+    <a href="{{ url_for('loan_form') }}?loan_type=Mortgage">Mortgage Loan Form</a>
+    <a href="{{ url_for('loan_form') }}?loan_type=Vehicle">Vehicle Loan Form</a>
+    <a href="{{ url_for('loan_form') }}?loan_type=Agriculture">Agriculture Loan Form</a>
+</div>
+
+
+
+
+    <br><br>
+    <div>
+        <a href="/all_data">View All Applications</a> 
+    </div>
+
+</body>
+</html>
